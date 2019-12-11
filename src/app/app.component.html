@@ -1,0 +1,37 @@
+<h2 style="text-align: center;">Data Binding in Angular By Nitin Kumar</h2>
+<div class="container">
+  <h2>{{ title }}</h2> <!-- String Interpolation  -->
+
+<img [src]="imgUrl" width="250px" height="150px"> <!-- Property Binding  -->
+
+<hr/>
+
+<h2>Event Binding Demo</h2> 
+
+<button class="buttonDemo" (click)="onSave($event)">Save</button> <!-- Event Binding -->
+
+<br>
+ <h2>Addition is {{addTwoNumbers()}}</h2> 
+<hr/>
+
+<h2>Event Bubbling Demo</h2>
+
+<!-- Event Bubbling -->
+<div (click)="onDivClick()">
+  <button class="buttonDemo" (click)="onSave($event)">Save</button>  <!-- Event Binding -->
+</div>
+
+<hr/>
+
+<h2>Event Filtering Demo</h2>
+
+<input (keyup.enter)="onPressEnter($event)" />
+
+<hr/>
+
+<h2>Two-way Binding Demo</h2>
+
+<input [(ngModel)]="fullName" /> <br/><br/>
+
+Model data is : {{fullName}}
+</div>

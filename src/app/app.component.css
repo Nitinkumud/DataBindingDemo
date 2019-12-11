@@ -1,0 +1,13 @@
+.container {
+    font-size: medium;
+    color: rgb(141, 10, 36);
+    background-color: rgb(235, 240, 240);
+}
+
+.buttonDemo {
+    color: darkgray;
+    size: 6em;
+    background-color: rgb(196, 196, 204);
+    color: rgb(197, 32, 142);
+    font-size: small;
+}
